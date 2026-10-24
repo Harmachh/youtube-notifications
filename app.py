@@ -15,7 +15,7 @@ from aiogram.exceptions import TelegramForbiddenError
 from aiogram.filters import Command
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN")
+BOT_TOKEN =("BOT_TOKEN", "YOUR_BOT_TOKEN")
 CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", "900"))
 MAX_CHANNELS = 20
 DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "youtube_bot.db")
